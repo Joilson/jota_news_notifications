@@ -1,0 +1,9 @@
+services:
+  worker:
+    build: ./.docker/web
+    container_name: notifications_worker
+    restart: always
+    volumes:
+      - .:/app
+
+
